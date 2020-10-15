@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSubmitAdd = new System.Windows.Forms.Button();
+            this.btnReturn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblAddMessage
@@ -82,7 +83,7 @@
             // 
             // btnSubmitAdd
             // 
-            this.btnSubmitAdd.Location = new System.Drawing.Point(156, 120);
+            this.btnSubmitAdd.Location = new System.Drawing.Point(108, 120);
             this.btnSubmitAdd.Name = "btnSubmitAdd";
             this.btnSubmitAdd.Size = new System.Drawing.Size(103, 25);
             this.btnSubmitAdd.TabIndex = 5;
@@ -90,11 +91,22 @@
             this.btnSubmitAdd.UseVisualStyleBackColor = true;
             this.btnSubmitAdd.Click += new System.EventHandler(this.btnSubmitAdd_Click);
             // 
+            // btnReturn
+            // 
+            this.btnReturn.Location = new System.Drawing.Point(243, 120);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(103, 25);
+            this.btnReturn.TabIndex = 6;
+            this.btnReturn.Text = "Return";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
             // AddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 174);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnSubmitAdd);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -117,5 +129,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSubmitAdd;
+        private System.Windows.Forms.Button btnReturn;
     }
 }

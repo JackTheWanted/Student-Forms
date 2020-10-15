@@ -47,12 +47,30 @@ namespace Student_Forms
 
         private void btnEditBoth_Click(object sender, EventArgs e)
         {
-
+            if (txtFirstName.Text.Trim() != "" && txtLastName.Text.Trim() != "")
+            {
+                if (txtLastName.Text.Trim() != "")
+                {
+                    StudentForms.students[index].LastName = txtLastName.Text.Trim();
+                    StudentForms.students[index].LastName = txtLastName.Text.Trim();
+                    this.Dispose();
+                }
+                
+            }
+            else
+            {
+                lblEditMessage.Text = "Either invalid first name or invalid last name";
+            }
         }
 
         private void EditStudent_Load(object sender, EventArgs e)
         {
             lblPrevStudentName.Text = "The students current name is " + StudentForms.students[index].FirstName + " " + StudentForms.students[index].LastName;
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblEditMessage = new System.Windows.Forms.Label();
+            this.btnReturn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPrevStudentName
@@ -122,11 +123,22 @@
             this.lblEditMessage.Size = new System.Drawing.Size(0, 25);
             this.lblEditMessage.TabIndex = 8;
             // 
+            // btnReturn
+            // 
+            this.btnReturn.Location = new System.Drawing.Point(293, 137);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(107, 23);
+            this.btnReturn.TabIndex = 9;
+            this.btnReturn.Text = "Return";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
             // EditStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(523, 209);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.lblEditMessage);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -155,5 +167,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblEditMessage;
+        private System.Windows.Forms.Button btnReturn;
     }
 }
